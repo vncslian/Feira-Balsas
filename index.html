@@ -1,418 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Feira Balsas | Produtos Locais e Artesanato</title>
-    <link rel="stylesheet" href="styles.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feira Balsas</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 
-        <header class="header-principal">
-            <div class="container header-content">
-                <div class="logo">
-                    <img src="img/logo.png" alt="Logo Feira Balsas" class="logo-image">
-                </div>
-                <nav class="nav-principal">
-                    <a href="#destaques" class="nav-link">Catálogo</a>
-                    <a href="#destaques" class="nav-link">Destaques</a>
-                    <a href="#cadastro" class="nav-link">Cadastro</a>
-                </nav>
-            </div>
-        </header>
-    
-    <section class="hero-section" id="topo">
-        <div class="container hero-content">
-            <div class="hero-text-area">
-                <p class="welcome-text">BEM-VINDOS À</p>
-                <h1>FEIRA BALSAS</h1> 
-                <p class="subtitle">Descubra os sabores, cores e talentos de Balsas. Produtos frescos, artesanato autêntico e inovação local — tudo direto dos nossos empreendedores para você.</p>
-                <a href="#produtos-destaque" class="btn btn-catalogo">VER CATÁLOGO</a>
-            </div>
-            <div class="hero-image-area">
-                <div class="hero-image-feirante"><img src="img/Feirante.png" alt="hero-image-feirante" class="hero-image-feirante"></div>
-            </div>
-        </div>
-    </section>
+<!-- Cabeçalho -->
+  <header>
+    <img src="img/Adobe Express - file.png" alt="Feira Balsas" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#destaques">Destaques</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="header-container-fixo">
- 
-        <section class="secondary-header">
-            <div class="secondary-content"> 
-                <div class="address-info">
-                    <i class="fas fa-map-marker-alt"></i> Informe seu endereço
-                </div>
-                <div class="search-bar">
-                    <input type="text" placeholder="Buscar produtos, vendedor e muito mais..."/>
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-                <nav class="nav-secundaria">
-                    <a href="#" class="nav-action">Crie sua conta</a>
-                    <a href="#" class="nav-action">Entre</a>
-                    <a href="#" class="nav-action cart-icon">
-                        Compras <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">0</span>
-                    </a>
-                </nav>
-            </div>
-        </section>
-        
-    </div> 
-    <main class="main-content" id="produtos">
-        <div class="container">
+<!-- Página Principal -->
+  <section class="hero">
+    <div class="hero-left">
+      <h2>BEM-VINDOS À </h2>
+      <h1>FEIRA BALSAS</h1>
+      <p>Descubra os sabores, cores e talentos de Balsas.<br>
+      Produtos frescos, artesanato autêntico e inovação local — tudo dentro dos nossos empreendimentos para você.</p>
+      <a href="#catalogo" class="btn-hero">VER CATÁLOGO</a>
+    </div>
+    <div class="hero-right">
+      <div class="circle-bg"></div>
+      <img src="img/Feirante.png" alt="Feirante com legumes" />
+      <small>Experimente com esta de legumes.</small>
+    </div>
+  </section>
 
-            <section class="products-section" id="destaques">
-                <h2>Produtos em Destaque</h2>
-                <div class="products-grid">
-                    
-                    <div class="product-card" data-name="Alface Fresco">
-                        <div class="product-image" style="background-image: url('img/alface.png');"></div>
-                        <div class="product-info">
-                            <h3>Alface fresco, lavado direto da horta</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Socorro</span>
-                                <span class="unit">1 Uni.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 10,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+<!-- Produtos em Destaque -->
+  <section class="produtos-destaque" id="destaques">
+    <h2>Produtos em Destaque</h2>
+    <div class="grid-produtos">
+      <div class="item"><img src="img/alface.png" alt="Alface" /><p>Alface Fresca</p><span>R$ 1,99 / unidade</span></div>
+      <div class="item"><img src="img/gengibre.png" alt="Gengibre" /><p>Gengibre</p><span>R$ 4,00 / 250g</span></div>
+      <div class="item"><img src="img/carne.png" alt="Carne" /><p>Carne bovina</p><span>R$ 25,00 / kg</span></div>
+      <div class="item"><img src="img/cesta.png" alt="Aipim" /><p>Cesta</p><span>R$ 8,99 / unidade</span></div>
+      <div class="item"><img src="img/tomate.png" alt="Tomate" /><p>Tomates frescos</p><span>R$ 3,99 / kg</span></div>
+      <div class="item"><img src="img/bolacha.png" alt="Bolacha" /><p>Bolachas Artesanais</p><span>R$ 5,00 / unidade</span></div>
+      <div class="item"><img src="img/peixe.png" alt="Peixe Tambaqui" /><p>Peixe tambaqui de rio</p><span>R$ 15,00 / kg</span></div>
+      <div class="item"><img src="img/feijao.png" alt="Feijão Branco" /><p>Feijão branco</p><span>R$ 6,00 / kg</span></div>
 
-                    <div class="product-card" data-name="Gengibre">
-                        <div class="product-image" style="background-image: url('img/gengibre.png');"></div>
-                        <div class="product-info">
-                            <h3>Gengibre</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: José</span>
-                                <span class="unit">9 Uni.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 15,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+  </section>
 
-                    <div class="product-card" data-name="Coentro para tempero">
-                        <div class="product-image" style="background-image: url('img/coentro.png');"></div>
-                        <div class="product-info">
-                            <h3>Coentro para tempero</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Ana Rita</span>
-                                <span class="unit">1 Uni.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 3,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+<!-- Catálogo Completo -->
+  <section class="produtos-alimenticios" id="catalogo">
+    <h2>Produtos Alimentícios</h2>
+    <div class="grid-produtos">
+      <div class="item"><img src="img/batata.png" alt="Batata" /><p>Batata</p><span>R$ 3,00 / kg</span></div>
+      <div class="item"><img src="img/abobora.png" alt="Abóbora" /><p>Abóbora</p><span>R$ 2,50 / kg</span></div>
+      <div class="item"><img src="img/mandioca.png" alt="Mandioca" /><p>Mandioca Embalada</p><span>R$ 4,00 / kg</span></div>
+      <div class="item"><img src="img/banana.png" alt="Banana" /><p>Banana</p><span>R$ 3,00 / dúzia</span></div>
+      <div class="item"><img src="img/amendoim.png" alt="Amendoim" /><p>Amendoim com casca</p><span>R$ 3,00 / kg</span></div>
+      <div class="item"><img src="img/manga.png" alt="Manga" /><p>Manga Verde e Madura</p><span>R$ 2,50 / kg</span></div>
+      <div class="item"><img src="img/maracuja.png" alt="Maracujá" /><p>Maracujá</p><span>R$ 3,00 / kg</span></div>
+      <div class="item"><img src="img/laranja.png" alt="Laranja" /><p>Laranja</p><span>R$ 2,50 / dúzia</span></div>
+      <div class="item"><img src="img/abacaxi.png" alt="Abacaxi" /><p>Abacaxi</p><span>R$ 3,00 / unidade</span></div>
+      <div class="item"><img src="img/mel.png" alt="Mel de Abelha" /><p>Mel de Abelha</p><span>R$ 3,00 / kg</span></div>
+      <div class="item"><img src="img/verduras.png" alt="Verduras" /><p>Verduras</p><span>R$ 4,00 / unidade</span></div>
+      <div class="item"><img src="img/bolo.png" alt="Bolo" /><p>Bolo de Cenoura</p><span>R$ 12,00 / unidade</span></div>
+      <div class="item"><img src="img/melancia.png" alt="Melancia" /><p>Melancia</p><span>R$ 10,00 / unidade</span></div>
+      <div class="item"><img src="img/mel2.png" alt="Abacaxi" /><p>Mel da Zefa</p><span>R$ 2,50 / kg</span></div>
+      <div class="item"><img src="img/mamao.png" alt="Mamao" /><p>Mamao</p><span>R$ 3,50 / kg</span></div>
+      <div class="item"><img src="img/castanha.png" alt="Castanha" /><p>Castanha</p><span>R$ 2,00 / kg</span></div>
+    </div>
+  </section>
 
-                    <div class="product-card" data-name="Carne Cordeiro">
-                        <div class="product-image" style="background-image: url('img/carne.png');"></div>
-                        <div class="product-info">
-                            <h3>Carne Cordeiro fresquinha</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Alan</span>
-                                <span class="unit">1 Uni.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 47,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+<!-- Cadastro -->
+  <section class="cadastro" id="cadastro">
+    <div class="cadastro-central">
+      <h2>Cadastre seu Produto</h2>
+      <p>Se você é produtor, artesão ou empreendedor local, divulgue seus produtos na Feira Balsas. Preencha o formulário abaixo e faça parte da nossa rede!</p>
 
-                    <div class="product-card" data-name="Açafrão no peso">
-                        <div class="product-image" style="background-image: url('img/açafrão.png');"></div>
-                        <div class="product-info">
-                            <h3>Açafrão no peso</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Manoel</span>
-                                <span class="unit">1 Uni.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 4,99</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+      <div class="form-box">
+        <h3>Cadastre aqui</h3>
+        <form>
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" placeholder="Digite seu nome completo" required />
 
-                    <div class="product-card" data-name="Tomates maduros">
-                        <div class="product-image" style="background-image: url('img/tomate.png');"></div>
-                        <div class="product-info">
-                            <h3>Tomates maduros</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Eurides</span>
-                                <span class="unit">5 Uni.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 5,50</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product-card" data-name="Bolsas Artesanais">
-                        <div class="product-image" style="background-image: url('img/cesta.png');"></div>
-                        <div class="product-info">
-                            <h3>Cestas Artesanais</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Conceição</span>
-                                <span class="unit">1 Uni.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 42,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+          <label for="email">Seu e-mail</label>
+          <input type="email" id="email" placeholder="Digite seu e-mail" required />
 
-                    <div class="product-card" data-name="Peixe Tratado">
-                        <div class="product-image" style="background-image: url('img/peixe.png');"></div>
-                        <div class="product-info">
-                            <h3>Peixe Tratado e sem tratar</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Seu Franco</span>
-                                <span class="unit">1 Uni.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 30,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+          <label for="produto">Nome do produto</label>
+          <input type="text" id="produto" placeholder="Ex: Melancia orgânica" required />
 
-                    <div class="product-card" data-name="Fava no prato">
-                        <div class="product-image" style="background-image: url('img/fava.png');"></div>
-                        <div class="product-info">
-                            <h3>Fava no prato</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Maria de Lurdes</span>
-                                <span class="unit">1 PRATO</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 37,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+          <label for="descricao">Descrição do produto</label>
+          <textarea id="descricao" placeholder="Conte mais sobre seu produto" rows="4"></textarea>
 
-                    <div class="product-card" data-name="Feijão da Roça">
-                        <div class="product-image" style="background-image: url('img/feijao.png');"></div>
-                        <div class="product-info">
-                            <h3>Feijão da Roça</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Seu Luiz</span>
-                                <span class="unit">1 PRATO</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 23,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
+          <button type="submit">Enviar Cadastro</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-                </div>
-            </section>
-
-            <section class="products-section" id="alimenticios">
-                <h2>Produtos Alimentícios</h2>
-                <div class="products-grid">
-
-                    <div class="product-card" data-name="Cenoura">
-                        <div class="product-image" style="background-image: url('img/cenoura.png');"></div>
-                        <div class="product-info">
-                            <h3>Cenoura</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Dona Benta</span>
-                                <span class="unit">1 Kg</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 4,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-name="Batata">
-                        <div class="product-image" style="background-image: url('img/batata.png');"></div>
-                        <div class="product-info">
-                            <h3>Batata</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Claudia</span>
-                                <span class="unit">1 kg</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 4,06</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-name="Abóbora">
-                        <div class="product-image" style="background-image: url('img/abobora.png');"></div>
-                        <div class="product-info">
-                            <h3>Abóbora</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Manoel</span>
-                                <span class="unit">1 Kg</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 6,95</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product-card" data-name="Mandioca">
-                        <div class="product-image" style="background-image: url('img/mandioca.png');"></div>
-                        <div class="product-info">
-                            <h3>Mandioca Descascada e com casca</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Celso</span>
-                                <span class="unit">1 Kg</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 8,99</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-name="Banana">
-                        <div class="product-image" style="background-image: url('img/banana.png');"></div>
-                        <div class="product-info">
-                            <h3>Banana</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Berta</span>
-                                <span class="unit">1 Kg</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 6,98</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product-card" data-name="Amendoim com casca">
-                        <div class="product-image" style="background-image: url('img/amendoim.png');"></div>
-                        <div class="product-info">
-                            <h3>Amendoim com casca</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: João</span>
-                                <span class="unit">1 Uni.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 15,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-name="Manga Verde e Madura">
-                        <div class="product-image" style="background-image: url('img/manga.png');"></div>
-                        <div class="product-info">
-                            <h3>Manga Verde e Madura</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Celso</span>
-                                <span class="unit">1 Kg.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 4,50</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-name="Melancia Madura">
-                        <div class="product-image" style="background-image: url('img/melancia.png');"></div>
-                        <div class="product-info">
-                            <h3>Melancia Madura</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: José</span>
-                                <span class="unit">1 Uni.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 22,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-name="Laranja">
-                        <div class="product-image" style="background-image: url('img/laranja.png');"></div>
-                        <div class="product-info">
-                            <h3>Laranja</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Maria</span>
-                                <span class="unit">1 Kg</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 5,90</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-name="Abacaxi cortado">
-                        <div class="product-image" style="background-image: url('img/abacaxi.png');"></div>
-                        <div class="product-info">
-                            <h3>Abacaxi cortado</h3>
-                            <div class="product-details">
-                                <span class="vendor-name">Vendedor: Clara</span>
-                                <span class="unit">1 Uni.</span>
-                            </div>
-                            <div class="product-price-action">
-                                <span class="price">R$ 12,00</span>
-                                <button class="btn btn-small">Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container footer-grid">
-            
-            <div class="footer-col vendor-center">
-                <h3><i class="fas fa-store"></i> CENTRAL DO VENDEDOR</h3>
-                <ul>
-                    <li><a href="#">Cadastre-se para vender</a></li>
-                    <li><a href="#">Área do Produtor/Artesão</a></li>
-                    <li><a href="#">Condições de Venda</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col customer-service">
-                <h3><i class="fas fa-headset"></i> CENTRAL DE ATENDIMENTO</h3>
-                <ul>
-                    <li><a href="#">Fale Conosco</a></li>
-                    <li><a href="#">Minhas Compras</a></li>
-                    <li><a href="#">Dúvidas Frequentes</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col help">
-                <h3><i class="fas fa-question-circle"></i> AJUDA</h3>
-                <ul>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Termos de Uso</a></li>
-                    <li><a href="#">Entrega e Devolução</a></li>
-                </ul>
-            </div>
-            
-        </div>
-        <div class="container copyright">
-            <p>&copy; 2025 Feira Balsas. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+<!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Feira Balsas</p>
+  </footer>
 
 </body>
+
 </html>
